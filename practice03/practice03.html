@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Practice03</title>
+    <script>
+    function sortArrayContents(array){
+      var stringArray = [];
+      var numberArray = [];
+      var booleanArray = [];
+      var result =[];
+      for(var index = 0; index < array.length; index++){
+        var arrayItem = array[index];
+        var arrayItemType = typeof arrayItem;
+        switch(arrayItemType){
+          case 'string':
+            stringArray.push(arrayItem);
+            break;
+          case 'number':
+            numberArray.push(arrayItem);
+            break;
+          case 'boolean':
+            booleanArray.push(arrayItem);
+            break;
+
+        }
+      }
+      result.push(stringArray, numberArray, booleanArray);
+      return result;
+    }
+    var myArray = ['hello', 34, true, false, 'goodbye', 56, 12, '25', true];
+    console.log(myArray);
+    console.log(sortArrayContents(myArray));
+    </script>
+  </head>
+  <body>
+
+  </body>
+</html>
