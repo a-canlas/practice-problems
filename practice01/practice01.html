@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <title>Practice 01</title>
+  <script>
+    function showBiggerWords(str, array){
+      result = [];
+      for(var index = 0; index < array.length; index++){
+        var wordInArray = array[index];
+        if(wordInArray.length > str.length){
+          result.push(wordInArray);
+        }
+      }
+      return result;
+    }
+
+    var testArray = ['cat', 'boat', 'giraffe', 'me', 'pineapple'];
+    console.log(testArray);
+    console.log(showBiggerWords('landmark', testArray));
+  </script>
+</head>
+<body>
+
+</body>
+</html>
