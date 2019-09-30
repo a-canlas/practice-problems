@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Practice08 - Converting to ASCII Code</title>
+    <script>
+      function asciiConversion(textToConvert){
+        var convertedText = '';
+        for(var outer = 0; outer < textToConvert.length; outer++){
+          for(var inner = 0; inner < textToConvert[outer].length; inner++){
+            var letter = textToConvert[outer];
+            var asciiCode = letter.charCodeAt(inner);
+            convertedText += asciiCode;
+          }
+        }
+        return convertedText;
+      }
+      var asciiTest = asciiConversion('Erwin Canlas');
+      console.log(asciiTest);
+    </script>
+  </head>
+  <body></body>
+</html>
