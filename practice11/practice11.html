@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Practice 11 - Evens and Odds</title>
+    <script>
+      function sortOddsEvens(arr){
+        var result = [];
+        var odds = [];
+        var evens = [];
+        for(var index = 0; index < arr.length; index++){
+          var array_item = arr[index];
+          if(typeof array_item === 'number'){
+            if(array_item % 2 === 0){
+              if(!evens.includes(array_item)){
+                evens.push(array_item);
+              }
+            }
+            else{
+              if(!odds.includes(array_item)){
+                odds.push(array_item);
+              }
+            }
+          }
+        }
+        result.push({'odd': odds, 'even': evens});
+        return result;
+      }
+
+      var testArray = [2, 5, 1, 6, 8, 2, 20, 'cat', 13, 3];
+      console.log(sortOddsEvens(testArray));
+    </script>
+  </head>
+  <body></body>
+</html>
