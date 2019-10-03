@@ -1,0 +1,17 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Practice 17 - Skippy Numbers</title>
+    <script>
+      function skippy_numbers(num){
+        var result = [];
+        for(var index = num; index < 13; index += num + 1){
+          result.push(index, index + 1);
+        }
+        return result;
+      }
+      console.log(skippy_numbers(2));
+    </script>
+  </head>
+  <body></body>
+</html>
