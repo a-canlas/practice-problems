@@ -17,11 +17,16 @@
   - given an element, an attribute, and a value change the targetted element to the appropriate key/value
   - for example: addAttributeToElement('#test','hi','bye')
   - would make the #test element have an attribute 'hi' with a value of 'bye', like the following:
-    - <div id="#test" "hi"="bye">
+    - ```<div id="#test" "hi"="bye">```
 
-- addAttributeToElement: 
-  - given an element, an attribute, and a value change the targetted element to the appropriate key/value for example: 
-  - addAttributeToElement('#test','hi','bye')
-    - would make the #test element have an attribute 'hi' with a value of 'bye', like the following:
-    - <div id="#test" "hi"="bye">
+- putPosInElement: 
+  - given an element, grab that element's position
+  - store the position inside the text of that element 
+    - in the following format:
+    - ```x: 30px<br>y: 50px```
+    - Note the break element between the two.
+  - It should also return an object with the values:
+    - ```{x: 30, y: 50}```
+    - note that there is no 'px' in this case
+
 
