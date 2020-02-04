@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Practice09 - Fitting Words</title>
+    <script>
+      function fittingWords(str_value, arr){
+
+        var str_array = str_value.split('');
+        var result = [];
+        for(var outer = 0; outer < arr.length; outer++){
+          var match = false;
+          for(var inner = 0; inner < str_array.length; inner++){
+            if(arr[outer].includes(str_array[inner])){
+              match = true;
+            }
+            else {
+              match = false;
+              break;
+            }
+          }
+          if(match){
+            result.push(arr[outer]);
+          }
+        }
+        return result;
+      }
+      myArray = ['cat', 'caterpillar', 'whale', 'accurate', 'smile', 'cactus', 'cute', 'concatenate', 'concentrate', 'call', 'spoop'];
+      console.log(fittingWords('ops', myArray));
+      // fittingWords('cat', myArray);
+    </script>
+  </head>
+  <body></body>
+</html>
