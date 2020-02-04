@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Practice 13 - Math Computation Sequences</title>
+    <script>
+      function math_sequences(num1, num2){
+        var result = [];
+        var addition = num1 + num2;
+        var subtraction = num1 - num2;
+        var multiplication = num1 * num2;
+        var division = 'Cannot divide by 0';
+        if(num2 !== 0){
+          division = num1 / num2;
+        }
+        // Need a cleaner way to do this:
+        result.push(num1 + ' + ' + num2 + ' = ' + addition);
+        result.push(num1 + ' - ' + num2 + ' = ' + subtraction);
+        result.push(num1 + ' * ' + num2 + ' = ' + multiplication);
+        result.push(num1 + ' / ' + num2 + ' = ' + division);
+        return result;
+      }
+
+      console.log(math_sequences(0, 20));
+    </script>
+  </head>
+  <body></body>
+</html>
