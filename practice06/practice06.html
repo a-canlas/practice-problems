@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Practice 06</title>
+    <script>
+      function fibonacci(sequenceNum){
+        var result = 0;
+        console.log(result); // Not sure if these two console.logs are the correct way to do this..
+        console.log(result + 1);
+        for(var iteration = 0, num1 = 0, num2 = 1; iteration < sequenceNum; iteration++){
+          result = num1 + num2;
+          console.log(result);
+          num1 = num2;
+          num2 = result;
+
+        }
+      }
+      fibonacci(12);
+    </script>
+  </head>
+  <body>
+
+  </body>
+</html>
