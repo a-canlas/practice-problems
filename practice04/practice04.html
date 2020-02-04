@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<head>
+  <title>Practice04</title>
+  <script>
+    function alphabeticSort(array){
+      var switched;
+      var sortedArray = array;
+      do {
+        switched = false;
+        for(var index = 0; index < sortedArray.length; index++){
+          if(sortedArray[index] > sortedArray[index + 1]){
+            var temp = sortedArray[index];
+            sortedArray[index] = sortedArray[index + 1];
+            sortedArray[index + 1] = temp;
+            switched = true;
+          }
+        }
+      } while(switched);
+      return sortedArray;
+    }
+
+    var testArray = ['mouse', 'cat', 'dog', 'human'];
+    console.log(testArray);
+    var newArray = alphabeticSort(testArray);
+    console.log(newArray);
+  </script>
+</head>
+<body>
+
+</body>
