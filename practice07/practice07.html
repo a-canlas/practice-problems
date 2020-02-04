@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Practice07 - Pig Latin</title>
+    <script>
+      function convertToPigLatin(textToTranslate){
+        var separatedWords = textToTranslate.split(" ");
+        for(var index = 0; index < separatedWords.length; index++){
+        var firstLetter = separatedWords[index].slice(0, 1);
+        separatedWords[index] = separatedWords[index].slice(1);
+        firstLetter = firstLetter.toLowerCase();
+        separatedWords[index] += firstLetter + 'ay';
+        }
+        var translatedText = separatedWords.join(" ");
+        return translatedText;
+
+      }
+
+      var fun_phrase = 'My name is Anastasia';
+      console.log(convertToPigLatin(fun_phrase));
+    </script>
+  </head>
+  <body>
+
+  </body>
+</html>
