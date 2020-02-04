@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Practice 5 - FizzBuzz</title>
+    <script>
+      function fizzBuzz(){
+        for(var iter = 1; iter <= 100; iter++){
+          if(iter % 5 === 0 && iter % 3 === 0){
+            console.log('FizzBuzz');
+          }
+          else if(iter % 3 === 0){
+            console.log('Fizz');
+          }
+          else if(iter % 5 === 0){
+            console.log('Buzz');
+          }
+          else{
+            console.log(iter);
+          }
+        }
+      }
+
+      fizzBuzz();
+    </script>
+  </head>
+  <body></body>
+</html>
